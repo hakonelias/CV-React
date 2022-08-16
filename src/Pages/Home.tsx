@@ -3,6 +3,7 @@ import { Popup } from '../Components/Popup';
 import css from '../CSS/Home.module.css'; //Trenger en global css for gjenbruk av css husk pls
 import { CovoidCheck } from '../saedLokShiet/CovidCheck';
 import { About } from './About';
+import { Contact } from './Kontakt';
 import { Projects } from './Projects';
 
 interface Props
@@ -44,7 +45,7 @@ export const Home = () => {
         <h1>Håkon Stensvoll</h1>
         <div className={css.bWrap}>
         <Btn name = "Prosjekter" path = {<Projects />} color={[112, 34, 34]}/>
-        <Btn name = "Kontakt" path = {<Projects />} color={[34, 112, 95]}/>
+        <Btn name = "Kontakt" path = {<Contact />} color={[34, 112, 95]}/>
         <Btn name = "Om meg" path = {<About />} color={[112, 81, 34]}/>
         <Btn name = "Covid2022" path = {<CovoidCheck />} color={[112, 34, 34]}/>
         </div>
