@@ -4,18 +4,24 @@ import './App.css';
 import { Home } from './Pages/Home';
 
 const checkMobile = () => {
-  if (window.innerWidth < 500) 
-      return "Mobile";
-  return "Computer"; //En litt eksperimentell måte å gjøre det på men kanskje det er digg idk
+  if (window.innerWidth < 600) 
+      return true;
+  return false; //
 }
 
 function App() {
-  const isMobile:string = checkMobile();
+  const isMobile = checkMobile();
+  if (!checkMobile())
   return (
-    <div className={isMobile}>
+    <div>
         <Home/>
     </div>
   );
+  else
+  return <div>
+    <h1></h1>
+    <Home/>
+  </div>
 }
 
 export default App;

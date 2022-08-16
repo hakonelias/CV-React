@@ -41,6 +41,7 @@
     overflow: hidden;
     margin:0 1%;
 }
+
 .button p {
     padding-left:0%;
     transition:all 250ms;
@@ -99,4 +100,71 @@
 .closeBtn:hover {
     
     background:red;
+}
+
+
+
+/*mobil shiet*/
+
+.buttonMobile {
+    height:100px;
+    display:flex;
+    justify-content: center; /*omg fuck flex vet ikke hvorfor jeg bruker det i det hele tatt*/
+    align-items: center;
+    background:rgba(34, 34, 34, 0.171);
+    color:white;
+    width:85%;
+    font-size: 24px;
+    font-weight: 100;
+    text-transform: uppercase;
+    cursor:pointer;
+    border-radius: 0 10px 0 10px;
+    border:solid 1px rgb(112, 34, 34);
+    position:relative;
+    transition:all 250ms;
+    overflow: hidden;
+    margin:4% 1%;
+}
+
+.buttonMobile p {
+    padding-left:0%;
+    transition:all 250ms;
+}
+.buttonMobile:hover p{
+    padding-left:10%;
+}
+
+.buttonMobile::before {
+    content:'';
+    position:absolute;
+    left:0%;
+    width:10px;
+    height:0%;
+    overflow: hidden;
+    border:inherit;
+    /* background:rgb(112, 34, 34); */
+    transform: rotate(30deg);
+    opacity:0;
+    transition:all 250ms;
+}
+.buttonMobile:hover::before {
+    opacity:1;
+    height:150%;
+}
+
+.mobileWrap {
+        /* background:green; */
+        display:flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-content:center;
+        align-items: center;
+        width:80%;
+        margin:10% auto;
+        /* background:#333; */
+        padding:5%;
+        box-shadow: 0px 0px 5px rgb(26, 26, 26);
+        border-radius: 10px;
+        border:solid 1px rgb(26, 26, 26);
+        z-index:0;
 }
