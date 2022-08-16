@@ -1,24 +1,19 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { Home } from './Pages/Home';
+
+const checkMobile = () => {
+  if (window.innerWidth < 500) 
+      return "Mobile";
+  return "Computer"; //En litt eksperimentell måte å gjøre det på men kanskje det er digg idk
+}
 
 function App() {
+  const isMobile:string = checkMobile();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={isMobile}>
+        <Home/>
     </div>
   );
 }
