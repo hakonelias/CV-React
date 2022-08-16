@@ -10,7 +10,7 @@ const checkMobile = () => {
 }
 
 function App() {
-  const isMobile = checkMobile();
+  const isMobile = checkMobile(); 
   if (!checkMobile())
   return (
     <div>
@@ -18,7 +18,7 @@ function App() {
     </div>
   );
   else
-  return <div>
+  return <div> {/*Hold up hva faen skjedde her hahahah håper ikke andrè finner dette prosjektet*/}
     <h1></h1>
     <Home/>
   </div>

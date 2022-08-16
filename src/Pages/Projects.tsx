@@ -30,7 +30,7 @@ const RenderProjects: React.FC<GitApi> = (props) => {
         {active && 
         <>
         <p>{props.description}</p>
-        <a href = {props.url}>Git link</a>
+        <a href = {props.url}>Git link</a> {/*Git linken leder til fucking apien ahahha fyfaen fiks */}
         </>
         }
     </div>
