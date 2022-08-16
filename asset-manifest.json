@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/CV-React/static/css/main.bae912dd.css",
+    "main.js": "/CV-React/static/js/main.bcc8714b.js",
+    "static/js/787.d3befce1.chunk.js": "/CV-React/static/js/787.d3befce1.chunk.js",
+    "static/media/Gulla.png": "/CV-React/static/media/Gulla.434adfe99a12a03c4ceb.png",
+    "static/media/Kirill.png": "/CV-React/static/media/Kirill.2483bbcd868f05097129.png",
+    "static/media/pinne.png": "/CV-React/static/media/pinne.0cadaf68cc0304352f35.png",
+    "static/media/håkon.jpg": "/CV-React/static/media/håkon.7ec65af2443fa0662d59.jpg",
+    "index.html": "/CV-React/index.html",
+    "main.bae912dd.css.map": "/CV-React/static/css/main.bae912dd.css.map",
+    "main.bcc8714b.js.map": "/CV-React/static/js/main.bcc8714b.js.map",
+    "787.d3befce1.chunk.js.map": "/CV-React/static/js/787.d3befce1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bae912dd.css",
+    "static/js/main.bcc8714b.js"
+  ]
+}
