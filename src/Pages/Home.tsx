@@ -59,6 +59,7 @@ const Btn: React.FC<btnProps> = (props) => {
 export const Home = () => {
     return <div className={css.wrapper}>
         <h1>Håkon Stensvoll</h1>
+        {checkMobile() && <p>Mobil edition</p>}
         <div className={checkMobile() ? css.mobileWrap : css.bWrap}>
         <Btn name = "Prosjekter" path = {<Projects />} color={[112, 34, 34]}/>
         <Btn name = "Kontakt" path = {<Contact />} color={[34, 112, 95]}/>
