@@ -4,7 +4,7 @@ import './App.css';
 import { Home } from './Pages/Home';
 
 const checkMobile = () => {
-  if (window.innerWidth < 600) 
+  if (window.innerWidth < 800) 
       return true;
   return false; //
 }

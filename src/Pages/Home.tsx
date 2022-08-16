@@ -28,7 +28,7 @@ const ClosePop:React.FC<{setState:any}> = (props) => {
 }
 
 const checkMobile = () => {
-    if (window.innerWidth < 600) 
+    if (window.innerWidth < 800) 
         return true;
     return false; //
   }
