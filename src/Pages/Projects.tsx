@@ -2,7 +2,7 @@ import { MouseEventHandler, useState } from 'react'
 import css from '../CSS/Projects.module.css'
 import { Btn } from './Home';
 import { useEffect } from 'react';
-
+import { Popup } from '../Components/Popup';
 interface GitApi
 {
     homepage:any,
@@ -47,9 +47,10 @@ export const Projects = () => {
     }, [])
     return <>
     {/* <div className={css.mouseAnim} style = {{top:mousepos.y, left:mousepos.x}}></div> */}
-    <div className={css.aWrap} onClick={(e) => {
+    {/* <div className={css.aWrap} onClick={(e) => {
         // setMousepos({x:e.clientX-16, y:e.clientY-16})
-    }}>
+    }}> */}
+    <Popup>
         <h1>Prosjekter:</h1>
         <div className={css.mainWrap}>
         {shouldRender && data!.map((data, index) => {return <RenderProjects
@@ -60,6 +61,8 @@ export const Projects = () => {
          />
          })}
          </div>
+         </Popup>
         {/* <button onClick={()=>{console.log(fetchProjects())}}>Test fetch</button> */}
-    </div></>
+    {/* </div> */}
+    </>
 }

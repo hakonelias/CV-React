@@ -4,6 +4,7 @@ import Kirill from './pictures/Kirill.png'
 import Pinne from './pictures/pinne.png'
 import css from './covid.module.css'
 import { useState } from 'react'
+import { Popup } from '../Components/Popup'
 interface imgProps {
     image:string
     name:string
@@ -43,7 +44,7 @@ const ImgBtn:React.FC<imgProps> = (props) => {
 }
 
 export const CovoidCheck = () => {
-    return <div className={css.aWrap}>
+    return <Popup>
         <h1>Doctor checkup 2022</h1>
         <div className={css.bWrap}>
         <ImgBtn image = {Gulla} name='Gulla' sykdom = {['Covid', 'klamydia', 'solid røykesug']}/>
@@ -51,5 +52,5 @@ export const CovoidCheck = () => {
         <ImgBtn image = {Kirill} name='Kirill' sykdom = {['russiske gener', 'sadboi2022-Syndrom', 'villighet til å bo i polen']}/>
         <ImgBtn image = {Pinne} name='Pinne' sykdom = {['Autisme', 'fremdeles lovable', '50% nikotinavhengighet']}/>
         </div>
-    </div>
+    </Popup>
 }

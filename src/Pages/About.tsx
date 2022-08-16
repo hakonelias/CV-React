@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import css from '../CSS/About.module.css'
-
+import { Popup } from '../Components/Popup'
 const languages = ['C++', 'assembly', 'Javascript', 'Typescript', 'React', 'Python', 'Rust']
 
 interface detailLang
@@ -74,7 +74,7 @@ const RenderDesc = () => {
 }
 
 export const About = () => {
-    return <div className={css.aWrap}>
+    return <Popup>
         <h1>Om meg</h1>
         {/* <div className={css.langWrap}> */}
         <RenderLangs/>
@@ -82,5 +82,5 @@ export const About = () => {
         <div className={css.descWrap}>
         <RenderDesc/>
         </div>
-        </div>
+        </Popup>
 }
