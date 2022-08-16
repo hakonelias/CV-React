@@ -69,13 +69,7 @@ const RenderLangs = () => {
 
 const RenderDesc = () => {
     return <>
-    <p>Jeg har programmert siden 2010 i en alder av 10 år gammel.</p>
-    <p>Jeg lærte det fra diverse forum med folk som var litt "elite" og så ned på copypasting, jeg var som sagt 10 år så var jeg redd for internet hate så jeg lærte C++ veldig grunding</p>
-    <p>Jeg har ingen formell utdanning, men jeg anbefaler å gi sjanser til folk som er opprinnelig interessert, selv uten 3/5 år med utdanning så kan vi fremdeles være ganske flink.</p>
-    <p>Jeg tar imot kritikk, jeg skjønner at jeg ikke er best, hvis folk har bedre forslag til ett problem, så hører jeg på de.</p>
-    <p>Jeg tåler også å lære ny teknologi, jeg kommer ikke til å skrive masse legacy code</p>
-    <p>Det var alt for nå, klikk på språkene på toppen for å få mer info om hva jeg kan :)</p>
-    <p></p>
+        <p>Helvete</p>
     </>
 }
 
